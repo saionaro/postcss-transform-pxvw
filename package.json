@@ -1,0 +1,32 @@
+{
+  "name": "postcss-pxvw",
+  "version": "1.0.0",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "pixel-perfect"
+  ],
+  "scripts": {
+    "lint": "eslint --ext .js src",
+    "publish:patch": "npm version patch && git push --follow-tags && npm publish"
+  },
+  "description": "Easy pixel-perfect",
+  "main": "src/index.js",
+  "repository": "git@github.com:Saionaro/postcss-pxvw.git",
+  "bugs": {
+    "url": "https://github.com/Saionaro/postcss-pxvw/issues"
+  },
+  "homepage": "https://github.com/Saionaro/postcss-pxvw",
+  "author": "Saionaro <shibakow@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^7.0.18"
+  },
+  "devDependencies": {
+    "@arkweid/lefthook": "^0.6.3",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.3.0",
+    "prettier": "^1.18.2"
+  }
+}
