@@ -12,7 +12,7 @@ const DETECTION_REGEX = /pxvw/;
 const PARAMS_FIND_REGEX = /pxvw\((.*)\)/;
 
 module.exports = postcss.plugin(
-  "postcss-pxvw",
+  "postcss-transform-pxvw",
   (
     options = {
       deviceWidth: 1200
