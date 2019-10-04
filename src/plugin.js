@@ -2,7 +2,8 @@ const { pxvw } = require("./pxvw");
 const {
   PARAMS_FIND_REGEX,
   DETECTION_REGEX,
-  DEFAULT_OPTIONS
+  DEFAULT_OPTIONS,
+  REPLACE_REGEX
 } = require("./constants");
 /**
  * Plugin function
@@ -18,16 +19,18 @@ const plugin = (opts = {}) => {
   return root => {
     root.walkDecls(decl => {
       if (DETECTION_REGEX.test(decl.value)) {
-        const groups = PARAMS_FIND_REGEX.exec(decl.value);
+        decl.value = decl.value.replace(PARAMS_FIND_REGEX, value => {
+          const paramsValue = value.replace(REPLACE_REGEX, "");
 
-        if (groups[1]) {
-          const [pixels, width] = groups[1].split(",");
+          if (paramsValue) {
+            const [pixels, width] = paramsValue.split(",");
 
-          decl.value = pxvw(pixels, {
-            digits: options.digitsCount,
-            pageWidth: width || options.defaultPageWidth
-          });
-        }
+            return pxvw(pixels, {
+              digits: options.digitsCount,
+              pageWidth: width || options.defaultPageWidth
+            });
+          }
+        });
       }
     });
   };
