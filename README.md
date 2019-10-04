@@ -1,4 +1,4 @@
-# postcss-transform-pxvw [![npm version](https://badge.fury.io/js/postcss-transform-pxvw.svg)](https://badge.fury.io/js/postcss-transform-pxvw)
+# postcss-transform-pxvw [![Actions Status](https://github.com/Saionaro/postcss-transform-pxvw/workflows/CI/badge.svg)](https://github.com/Saionaro/postcss-transform-pxvw/actions) [![npm version](https://badge.fury.io/js/postcss-transform-pxvw.svg)](https://badge.fury.io/js/postcss-transform-pxvw)
 
 The plugin allows you use exact pixels from a design markup and get in result a responsive layout. It's very helpful for pixel perfect.
 
