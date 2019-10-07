@@ -1,0 +1,7 @@
+.selector {
+  margin: pxvw(100, 768);
+}
+
+.selector2 {
+  margin: pxvw(100px, 768);
+}

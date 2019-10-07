@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "lint": "eslint --ext .js src",
+    "test": "jest",
     "publish:patch": "npm version patch && git push --follow-tags && npm publish"
   },
   "description": "Easy pixel-perfect",
@@ -27,6 +28,9 @@
     "@arkweid/lefthook": "^0.6.3",
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.3.0",
+    "jest": "^24.9.0",
+    "less": "^3.10.3",
+    "node-sass": "^4.12.0",
     "prettier": "^1.18.2"
   }
 }
