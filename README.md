@@ -34,6 +34,8 @@ CSS after transform:
 
 It also works with `less` and `sass`. Includes its variables.
 
+See more examples at [tests] cases.
+
 ## Installation
 
 ### Download package
@@ -66,3 +68,4 @@ See [PostCSS] docs for examples for your environment.
 | `digitsCount`      | `number` | 3             | The digits number which stay after decimal dot in vw value                                    |
 
 [postcss]: https://github.com/postcss/postcss
+[tests]: https://github.com/Saionaro/postcss-transform-pxvw/tree/master/tests
